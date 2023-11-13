@@ -25,7 +25,7 @@ services:
     volumes:
       - ./wordpress/:/var/www/html
       - ./themes/:/var/www/html/wp-content/themes/
-      # - ./php.ini:/usr/local/etc/php/php.ini
+      - ./php.ini:/usr/local/etc/php/php.ini
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
